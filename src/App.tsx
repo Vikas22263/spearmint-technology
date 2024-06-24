@@ -13,7 +13,7 @@ function App() {
   };
 
   return (
-    <div onClick={handleClick} style={{ position: 'relative', height: '100vh' }}>
+    <div onClick={handleClick} style={{ position: 'relative', height: '100vh', }}>
       <img
         style={{
           width: '100px',
@@ -21,7 +21,8 @@ function App() {
           position: 'absolute',
           left: `${imagePosition.x}px`,
           top: `${imagePosition.y}px`,
-           transition: ' 1s ease'
+          transition: ' 1s ease',
+          transform:  'scaleX(-1)',
         }}
         src= '/image/wizaart-img.56787174.gif'
         alt=""
