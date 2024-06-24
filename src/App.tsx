@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 
 function App() {
-  const [imagePosition, setImagePosition] = useState({ x: 0, y: 0 });
+  const [imagePosition, setImagePosition] = useState({ x: 100, y: 0 });
 
   const handleClick = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
     const newPosition = {
@@ -21,6 +21,7 @@ function App() {
           position: 'absolute',
           left: `${imagePosition.x}px`,
           top: `${imagePosition.y}px`,
+           transition: ' 1s ease'
         }}
         src= '/image/wizaart-img.56787174.gif'
         alt=""
