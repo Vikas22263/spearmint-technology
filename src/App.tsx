@@ -22,7 +22,7 @@ function App() {
           left: `${imagePosition.x}px`,
           top: `${imagePosition.y}px`,
         }}
-        src={process.env.PUBLIC_URL + '/image/wizaart-img.56787174.gif'}
+        src= '/image/wizaart-img.56787174.gif'
         alt=""
       />
     </div>
